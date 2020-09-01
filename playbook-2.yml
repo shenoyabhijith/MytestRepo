@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install Node
+      become: yes
+      yum:
+        name: nodejs
+        state: present

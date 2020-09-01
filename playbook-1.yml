@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: upgrade all packages
+      become: yes
+      yum:
+        name: '*'
+        state: latest
